@@ -1,0 +1,43 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust to your needs */
+    margin: auto;
+}
+
+.image-slide {
+    width: 100%;
+    display: block;
+}
+.prev-button,.autoPlay-button,
+.next-button {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 100; /* Ensure buttons are on top of the images */
+}
+
+.prev-button {
+    left: 10px; /* Position on the left side */
+}
+
+.next-button {
+    right: 10px; /* Position on the right side */
+}
+
+.autoPlay-button {
+    left: calc(50% - 50px); /* Center between Previous and Next buttons */
+    right: calc(50% - 50px); /* Center between Previous and Next buttons */
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for visibility */
+}
+
+/* Optional: Add hover effects for better UX */
+.prev-button:hover,
+.next-button:hover,.autoPlay-button {
+    background-color: rgba(0, 0, 0, 0.8);
+}

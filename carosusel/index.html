@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="image-container">
+         <h1>Image container</h1>
+         <img src="https://images.unsplash.com/photo-1726408093361-238693a8d51d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="image-slide"/>
+         <img src="https://images.unsplash.com/photo-1718143110625-c83b4d3726a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="image-slide" style="display: none;"/>
+         <img src="https://plus.unsplash.com/premium_photo-1689764442989-c7fe5d06ea7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1726418135716-082dfc953e16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1717705422478-0b42e89e06b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1718062455499-c362df48a68d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1726164023213-294bfe241ec7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQzfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1726043956116-72c9e2eb637f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1726092696603-002f851d9bc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1725995594023-01d1280ef4bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1725922638181-3dbab8df0f95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDc3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1725576415790-a5b4009a7952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDg0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"  class="image-slide" style="display: none;"/>
+         <img src="https://images.unsplash.com/photo-1725784014195-80d35ef7c0a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwOHw2c01WalRMU2tlUXx8ZW58MHx8fHx8"  class="image-slide" style="display: none;"/>
+        
+        </div>
+        
+            <Button  class="prev-button" onClick="nextBtn()">Next</Button>
+            <Button  id="auto-play"class="autoPlay-button" onClick="toggleAutoPlay()">Auto Play</Button>
+            <Button  class="next-button" onClick="prevBtn()">Previous</Button>
+        
+      
+    </div>
+    <script>
+        let currentIndex=0;
+        let autoPlayInterval;
+        let isAutoPlaying = false;
+        const images = document.querySelectorAll(".image-slide")
+        const showImage = (index)=>{
+            images.forEach((image, i) => {
+            image.style.display = i === index ? 'block' : 'none';
+        });
+        };
+
+        const nextBtn = ()=>{
+           currentIndex = (currentIndex+1)%images.length;
+           showImage(currentIndex)
+        }
+
+        const prevBtn = ()=>{
+            currentIndex =(currentIndex-1+images.length)%images.length;
+            showImage(currentIndex)
+        }
+        
+        const startAutoPlay = ()=>{
+            autoPlayInterval = setInterval(nextBtn,3000)
+            isAutoPlaying = true;
+            document.getElementById('auto-play').textContent = 'Stop Auto Play';
+        }
+
+        const stopAutoPlay = () => {
+        clearInterval(autoPlayInterval);
+        isAutoPlaying = false;
+        document.getElementById('auto-play').textContent = 'Auto Play';
+        };
+
+        const toggleAutoPlay =()=>{
+           if(isAutoPlaying){
+            stopAutoPlay()
+           }else{
+            startAutoPlay()
+           }
+        }
+        showImage(currentIndex)
+        
+    </script>
+</body>
+</html>
