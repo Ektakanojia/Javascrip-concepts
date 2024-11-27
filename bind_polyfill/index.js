@@ -1,14 +1,24 @@
-//this is the traditional way ,
 let name1 ={
-    firstName: 'John',
-    lastName: 'Doe',
+    firstname:"ekta",
+    lastname:"kanojia"
 }
 
-let printFullName = function(){
-    console.log(this.firstName + ' ' + this.lastName)
+let printName= function(hometown,city){
+    console.log(this.firstname+" "+this.lastname+" from "+ hometown +","+city)
 }
+let printMyName =printName.bind(name1,"UP","Lucknow");
+printMyName();
 
-let printMyName = printFullName.bind(name1);
-printMyName()
 
-//polyfill is the browser fallback,in case if browser does not provide the bind method then we need make our own bind method 
+let printName2 = function(hometown){
+console.log(this.firstname+" "+this.lastname +" from "+" "+hometown)
+}
+Function.prototype.mybind= function(...args){
+let obj= this
+let params= args.slice(1);
+return function(...args2){
+obj.call(args[0],[...params,...args2])
+}
+}
+let printMyName2 = printName2.mybind(name1,"UttarPardesh")
+printMyName2("India");
